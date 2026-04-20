@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Neuroproductividad - Transforma Tu Mente, Domina Tu Tiempo</title>
+    <title>Curso de Inteligencia Artificial - Genera Ingresos Reales</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
@@ -45,7 +45,6 @@
             overflow-x: hidden;
         }
 
-        /* Backgrounds y efectos */
         .bg-pattern {
             position: fixed;
             top: 0;
@@ -76,7 +75,6 @@
             z-index: 2;
         }
 
-        /* Container */
         .container {
             max-width: 1200px;
             margin: 0 auto;
@@ -89,7 +87,6 @@
             padding: 0 24px;
         }
 
-        /* Typography */
         h1, h2, h3, h4 {
             font-family: 'Playfair Display', serif;
             line-height: 1.2;
@@ -121,25 +118,6 @@
             color: var(--secondary);
         }
 
-        .highlight {
-            position: relative;
-            display: inline;
-        }
-
-        .highlight::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            height: 30%;
-            background: var(--secondary);
-            opacity: 0.3;
-            z-index: -1;
-            transform: skewX(-5deg);
-        }
-
-        /* Buttons */
         .btn {
             display: inline-flex;
             align-items: center;
@@ -169,27 +147,11 @@
             box-shadow: 0 20px 60px rgba(249, 115, 22, 0.5);
         }
 
-        .btn-primary::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
-            transition: left 0.5s;
-        }
-
-        .btn-primary:hover::before {
-            left: 100%;
-        }
-
         .btn-lg {
             padding: 22px 50px;
             font-size: 1.25rem;
         }
 
-        /* Urgency Banner */
         .urgency-banner {
             background: linear-gradient(90deg, var(--secondary), var(--secondary-light), var(--secondary));
             background-size: 200% 100%;
@@ -209,18 +171,8 @@
         .urgency-banner p {
             font-weight: 600;
             font-size: 1rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-            flex-wrap: wrap;
         }
 
-        .urgency-banner .emoji {
-            font-size: 1.2rem;
-        }
-
-        /* Hero Section */
         .hero {
             padding: 80px 0 60px;
             text-align: center;
@@ -273,7 +225,6 @@
             line-height: 1.8;
         }
 
-        /* Countdown Timer */
         .countdown-section {
             padding: 40px 0;
         }
@@ -328,7 +279,6 @@
             margin-top: 8px;
         }
 
-        /* Video Section */
         .video-section {
             padding: 60px 0;
         }
@@ -393,18 +343,14 @@
             margin-top: 20px;
             font-size: 1.1rem;
             color: var(--white);
-            display: flex;
-            align-items: center;
-            gap: 8px;
         }
 
-        /* Pain Points Section */
-        .pain-points {
+        .benefits-section {
             padding: 100px 0;
             position: relative;
         }
 
-        .pain-points::before {
+        .benefits-section::before {
             content: '';
             position: absolute;
             top: 0;
@@ -428,13 +374,13 @@
             margin-right: auto;
         }
 
-        .pain-grid {
+        .benefits-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 30px;
         }
 
-        .pain-card {
+        .benefit-card {
             background: linear-gradient(135deg, rgba(15, 10, 31, 0.8) 0%, rgba(26, 18, 48, 0.8) 100%);
             border: 1px solid rgba(108, 60, 233, 0.2);
             border-radius: 24px;
@@ -444,7 +390,7 @@
             overflow: hidden;
         }
 
-        .pain-card::before {
+        .benefit-card::before {
             content: '';
             position: absolute;
             top: 0;
@@ -456,17 +402,17 @@
             transition: opacity 0.3s;
         }
 
-        .pain-card:hover {
+        .benefit-card:hover {
             transform: translateY(-10px);
             border-color: rgba(108, 60, 233, 0.4);
             box-shadow: var(--shadow-lg);
         }
 
-        .pain-card:hover::before {
+        .benefit-card:hover::before {
             opacity: 1;
         }
 
-        .pain-icon {
+        .benefit-icon {
             width: 70px;
             height: 70px;
             background: var(--gradient-primary);
@@ -478,7 +424,7 @@
             font-size: 2rem;
         }
 
-        .pain-card h3 {
+        .benefit-card h3 {
             font-family: 'Outfit', sans-serif;
             font-size: 1.25rem;
             font-weight: 700;
@@ -486,22 +432,12 @@
             color: var(--white);
         }
 
-        .pain-card p {
+        .benefit-card p {
             color: var(--gray);
             font-size: 1rem;
             line-height: 1.7;
         }
 
-        .pain-solution {
-            margin-top: 20px;
-            padding-top: 20px;
-            border-top: 1px solid rgba(108, 60, 233, 0.2);
-            color: var(--primary-light);
-            font-weight: 500;
-            font-size: 0.95rem;
-        }
-
-        /* CTA Section */
         .cta-section {
             padding: 80px 0;
             text-align: center;
@@ -581,7 +517,6 @@
             font-weight: 500;
         }
 
-        /* Bonuses Section */
         .bonuses {
             padding: 100px 0;
             background: linear-gradient(180deg, transparent 0%, rgba(108, 60, 233, 0.05) 50%, transparent 100%);
@@ -652,7 +587,6 @@
             font-size: 1.1rem;
         }
 
-        /* Instructor Section */
         .instructor {
             padding: 100px 0;
         }
@@ -737,7 +671,6 @@
             color: var(--primary-light);
         }
 
-        /* Guarantee Section */
         .guarantee {
             padding: 80px 0;
         }
@@ -797,7 +730,6 @@
             line-height: 1.8;
         }
 
-        /* FAQ Section */
         .faq {
             padding: 100px 0;
         }
@@ -869,7 +801,6 @@
             line-height: 1.8;
         }
 
-        /* Final CTA */
         .final-cta {
             padding: 100px 0;
             text-align: center;
@@ -935,7 +866,6 @@
             margin-top: 10px;
         }
 
-        /* Footer */
         .footer {
             padding: 40px 0;
             text-align: center;
@@ -966,17 +896,6 @@
             font-size: 0.9rem;
         }
 
-        /* Animations */
-        @keyframes float {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-10px); }
-        }
-
-        .float-animation {
-            animation: float 3s ease-in-out infinite;
-        }
-
-        /* Responsive */
         @media (max-width: 640px) {
             .btn {
                 width: 100%;
@@ -992,7 +911,7 @@
                 font-size: 2rem;
             }
 
-            .pain-grid {
+            .benefits-grid {
                 grid-template-columns: 1fr;
             }
 
@@ -1009,30 +928,26 @@
     <div class="content-wrapper">
         <!-- Urgency Banner -->
         <div class="urgency-banner">
-            <p>
-                <span class="emoji">🔥</span>
-                <strong>¡ATENCIÓN!</strong> Hoy es el último día para acceder con descuento especial
-                <span class="emoji">🔥</span>
-            </p>
+            <p>🔥 Inscripciones abiertas por tiempo limitado 🔥</p>
         </div>
 
         <!-- Hero Section -->
         <section class="hero">
             <div class="container">
                 <div class="hero-badge">
-                    <span>🧠</span>
-                    <span>Método basado en Neurociencia</span>
+                    <span>🤖</span>
+                    <span>Aprende Inteligencia Artificial desde cero y úsala para generar ingresos reales</span>
                 </div>
                 <h1>
-                    Deja de <span class="text-orange">Procrastinar</span> y<br>
-                    <span class="text-gradient">Domina Tu Productividad</span>
+                    Aprende <span class="text-orange">Inteligencia Artificial</span><br>
+                    <span class="text-gradient">Desde Cero y Genera Ingresos Reales</span>
                 </h1>
                 <p class="hero-subtitle">
-                    Descubre el método respaldado por neurociencia que te ayudará a reprogramar tu cerebro, 
-                    eliminar la procrastinación y alcanzar tus metas sin fuerza de voluntad.
+                    Un curso práctico y explicativo paso a paso para emprendedores, dueños de negocio 
+                    y personas que quieran aprender la IA antes que los demás.
                 </p>
                 <a href="#precio" class="btn btn-primary btn-lg">
-                    ¡Quiero Transformar Mi Vida!
+                    Este curso es para ti
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                     </svg>
@@ -1063,74 +978,65 @@
             </div>
         </section>
 
-        <!-- Video Section -->
+        <!-- Video Section 1 -->
         <section class="video-section">
             <div class="container-narrow">
                 <div class="video-wrapper">
-                    <div class="video-placeholder" id="videoPlaceholder">
+                    <div class="video-placeholder" id="videoPlaceholder1">
                         <div class="play-button">
                             <svg viewBox="0 0 24 24">
                                 <polygon points="5,3 19,12 5,21"/>
                             </svg>
                         </div>
-                        <p class="video-label">
-                            <span>🔊</span>
-                            Haz clic para reproducir la clase gratuita
-                        </p>
+                        <p class="video-label">🔊 Haz clic para reproducir la clase</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Pain Points Section -->
-        <section class="pain-points">
+        <!-- Benefits Section -->
+        <section class="benefits-section">
             <div class="container">
                 <div class="section-header">
-                    <h2>¿Cuál de estas <span class="text-gradient">frustraciones</span> es la tuya?</h2>
-                    <p>Si reconoces al menos una... Este programa fue diseñado para ti</p>
+                    <h2>¿Por qué aprender <span class="text-gradient">Inteligencia Artificial</span>?</h2>
+                    <p>Descubre los beneficios que te espera al completar este curso</p>
                 </div>
                 
-                <div class="pain-grid">
-                    <div class="pain-card">
-                        <div class="pain-icon">🌀</div>
-                        <h3>Vives en Caos Constante</h3>
-                        <p>Mil cosas en tu mente, pero nada avanza. Te levantas con intenciones y terminas frustrado/a.</p>
-                        <p class="pain-solution">✨ Te damos claridad para salir del caos</p>
+                <div class="benefits-grid">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">💰</div>
+                        <h3>Genera Ingresos Reales</h3>
+                        <p>Aprende a monetizar tus habilidades en IA y comienza a ganar dinero desde el primer mes.</p>
                     </div>
 
-                    <div class="pain-card">
-                        <div class="pain-icon">🔄</div>
-                        <h3>Te Prometes Cosas Y No Las Cumples</h3>
-                        <p>"Hoy sí lo hago" → "Otra vez no". Sabes lo que debes hacer, pero algo te lo impide.</p>
-                        <p class="pain-solution">✨ Coordinamos tus pensamientos con tus acciones</p>
+                    <div class="benefit-card">
+                        <div class="benefit-icon">⚡</div>
+                        <h3>Ahorra Tiempo en Tu Negocio</h3>
+                        <p>Automatiza tareas repetitivas y dedica tu tiempo a lo que realmente importa.</p>
                     </div>
 
-                    <div class="pain-card">
-                        <div class="pain-icon">⚡</div>
-                        <h3>Estás Atrapado/a en un Círculo</h3>
-                        <p>No te concentras → No haces lo importante → Más tiempo trabajando → Agotamiento → Culpa → Repites</p>
-                        <p class="pain-solution">✨ Rompemos el ciclo que te mantiene atrapado/a</p>
+                    <div class="benefit-card">
+                        <div class="benefit-icon">🚀</div>
+                        <h3>Adelántate a la Competencia</h3>
+                        <p>Domina la IA antes que los demás y posiciónate como experto en tu industria.</p>
                     </div>
 
-                    <div class="pain-card">
-                        <div class="pain-icon">🚀</div>
-                        <h3>Empiezas Con Entusiasmo... Y Lo Abandonas</h3>
-                        <p>Mil proyectos iniciados. Pocos terminados. Algo te desconecta a medio camino.</p>
-                        <p class="pain-solution">✨ Te damos continuidad para completar tus proyectos</p>
+                    <div class="benefit-card">
+                        <div class="benefit-icon">🎯</div>
+                        <h3>Crea Contenido de Calidad</h3>
+                        <p>Utiliza IA para crear contenido, imágenes, videos y mucho más en minutos.</p>
                     </div>
 
-                    <div class="pain-card">
-                        <div class="pain-icon">❌</div>
-                        <h3>Ya Probaste TODO Y Nada Funcionó</h3>
-                        <p>Pomodoro, Apps, Listas, Cursos, Disciplina... Nada funcionó porque trabajabas CONTRA tu cerebro.</p>
-                        <p class="pain-solution">✨ Trabajamos A FAVOR de tu cerebro</p>
+                    <div class="benefit-card">
+                        <div class="benefit-icon">💡</div>
+                        <h3>Mejora Tus Estrategias</h3>
+                        <p>Obtén insights y análisis profundos para tomar mejores decisiones en tu negocio.</p>
                     </div>
 
-                    <div class="pain-card">
-                        <div class="pain-icon">😰</div>
-                        <h3>Sientes Ansiedad y Agotamiento</h3>
-                        <p>Terminas el día exhausto/a pero sientes que no avanzaste en lo importante.</p>
-                        <p class="pain-solution">✨ Aprende a trabajar con energía y enfoque</p>
+                    <div class="benefit-card">
+                        <div class="benefit-icon">🌟</div>
+                        <h3>Acceso de Por Vida</h3>
+                        <p>Una sola inversión y acceso ilimitado a todo el contenido actual y futuro del curso.</p>
                     </div>
                 </div>
             </div>
@@ -1140,8 +1046,8 @@
         <section class="cta-section">
             <div class="container-narrow">
                 <div class="cta-box">
-                    <h2>Es hora de tomar la decisión correcta</h2>
-                    <p>Únete a más de <strong>1,000+ estudiantes</strong> que ya están transformando su productividad</p>
+                    <h2>¿Estás listo para transformarte?</h2>
+                    <p>Únete a cientos de estudiantes que ya están cambiando sus vidas con la IA</p>
                     <a href="#precio" class="btn btn-primary btn-lg" style="background: var(--white); color: var(--primary);">
                         ¡Quiero Ingresar al Programa!
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -1156,7 +1062,23 @@
                             <div class="student-avatar">👨‍🦳</div>
                             <div class="student-avatar">+</div>
                         </div>
-                        <span>+1,000 estudiantes activos</span>
+                        <span>+500 estudiantes activos</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Video Section 2 -->
+        <section class="video-section">
+            <div class="container-narrow">
+                <div class="video-wrapper">
+                    <div class="video-placeholder" id="videoPlaceholder2">
+                        <div class="play-button">
+                            <svg viewBox="0 0 24 24">
+                                <polygon points="5,3 19,12 5,21"/>
+                            </svg>
+                        </div>
+                        <p class="video-label">🔊 Haz clic para reproducir la lección</p>
                     </div>
                 </div>
             </div>
@@ -1167,31 +1089,31 @@
             <div class="container">
                 <div class="section-header">
                     <h2>Regalos <span class="text-orange">Exclusivos</span></h2>
-                    <p>Solo para los primeros 50 estudiantes que se inscriban hoy</p>
+                    <p>Solo para los primeros inscritos en el programa</p>
                 </div>
                 
                 <div class="bonus-grid">
                     <div class="bonus-card">
                         <div class="bonus-badge">GRATIS</div>
                         <div class="bonus-icon">📚</div>
-                        <h3>Guía de Hábitos Atómicos</h3>
-                        <p>Plantillas y ejercicios para crear hábitos que se mantienen de por vida.</p>
+                        <h3>Guía Completa de IA</h3>
+                        <p>Manual completo con tutoriales, templates y recursos para aplicar inmediatamente.</p>
                         <p class="bonus-value">Valor: $47 USD</p>
                     </div>
 
                     <div class="bonus-card">
                         <div class="bonus-badge">GRATIS</div>
                         <div class="bonus-icon">🎯</div>
-                        <h3>Planificador Semanal Neuro</h3>
-                        <p>Sistema de planificación basado en los ritmos naturales de tu cerebro.</p>
+                        <h3>Plantillas Listas para Usar</h3>
+                        <p>Más de 50 prompts y plantillas que puedes usar en ChatGPT y otras herramientas.</p>
                         <p class="bonus-value">Valor: $37 USD</p>
                     </div>
 
                     <div class="bonus-card">
                         <div class="bonus-badge">GRATIS</div>
                         <div class="bonus-icon">💬</div>
-                        <h3>Acceso a Comunidad VIP</h3>
-                        <p>Grupo exclusivo de WhatsApp con soporte directo y networking.</p>
+                        <h3>Comunidad Exclusiva VIP</h3>
+                        <p>Acceso a grupo privado con otros estudiantes, soporte directo y networking profesional.</p>
                         <p class="bonus-value">Valor: $97 USD</p>
                     </div>
                 </div>
@@ -1204,29 +1126,28 @@
                 <div class="instructor-grid">
                     <div class="instructor-image">
                         <div class="instructor-placeholder">
-                            👩‍🏫
+                            👨‍💼
                         </div>
                     </div>
                     <div class="instructor-content">
-                        <h2>¿Quién será tu <span class="text-gradient">profesor/a</span>?</h2>
+                        <h2>¿Quién será tu <span class="text-gradient">profesor</span>?</h2>
                         <p>
-                            <strong>[Nombre del Instructor]</strong> es experto/a en Neuroproductividad: 
-                            un enfoque que combina neurociencia, psicología y hábitos conscientes para 
-                            vencer la procrastinación.
+                            <strong>[Nombre del Instructor]</strong> es un experto en Inteligencia Artificial 
+                            y emprendimiento digital con más de [X años] ayudando a profesionales y 
+                            empresarios a dominar la IA.
                         </p>
                         <p>
-                            Durante años luchó contra la ansiedad, el bloqueo mental y la culpa por 
-                            no cumplir sus planes. Hasta que descubrió que el problema no era falta 
-                            de disciplina, sino un desequilibrio en la forma de trabajar.
+                            Ha trabajado con [empresa/empresas importantes] y ayudado a cientos de estudiantes 
+                            a generar ingresos reales usando inteligencia artificial de forma práctica y efectiva.
                         </p>
                         <p>
-                            Hoy lidera una comunidad de más de 1,000 alumnos, donde enseña a 
-                            transformar la procrastinación mediante sistemas simples y sostenibles.
+                            Su metodología es simple, directa y enfocada en resultados. No encontrarás teoría 
+                            aburrida, solo lecciones prácticas que puedes aplicar inmediatamente en tu negocio.
                         </p>
                         <div class="instructor-credentials">
                             <div class="credential">
                                 <span class="credential-icon">🎓</span>
-                                <span>+1,000 estudiantes</span>
+                                <span>+500 estudiantes</span>
                             </div>
                             <div class="credential">
                                 <span class="credential-icon">⭐</span>
@@ -1253,12 +1174,12 @@
                     <div class="guarantee-content">
                         <h2>Garantía de 100% Satisfacción</h2>
                         <p>
-                            ¿Aún tienes dudas? No te preocupes. Si el contenido no es lo que esperabas, 
-                            tienes <strong>7 días de garantía</strong> y te devolvemos tu dinero sin preguntas.
+                            Si en los primeros 7 días no estás completamente satisfecho con el curso, 
+                            te devolvemos tu dinero sin preguntas. Sin complicaciones, sin excusas.
                         </p>
                         <p>
-                            Recuerda que tu acceso a la plataforma es de por vida y que siempre 
-                            estamos añadiendo nuevas lecciones.
+                            Tu acceso es de por vida y continuamente estamos agregando nuevo contenido 
+                            actualizado con los últimos avances en IA.
                         </p>
                     </div>
                 </div>
@@ -1275,85 +1196,81 @@
                 <div class="faq-list">
                     <div class="faq-item">
                         <div class="faq-question">
-                            <span>¿Cuándo tendré acceso al contenido?</span>
+                            <span>¿Cuándo tendré acceso al curso?</span>
                             <span class="faq-icon">+</span>
                         </div>
                         <div class="faq-answer">
                             <div class="faq-answer-content">
-                                Inmediatamente después de confirmar tu compra. Recibirás un correo con tu 
-                                usuario, contraseña y acceso directo a la plataforma. Si no lo ves en tu 
-                                bandeja principal, revisa SPAM.
+                                Inmediatamente después de confirmar tu pago. Recibirás un correo con tu acceso 
+                                a la plataforma en menos de 5 minutos. Si no lo ves en tu bandeja principal, 
+                                revisa la carpeta de SPAM.
                             </div>
                         </div>
                     </div>
 
                     <div class="faq-item">
                         <div class="faq-question">
-                            <span>¿Cuáles son los métodos de pago?</span>
+                            <span>¿Cuáles son los métodos de pago aceptados?</span>
                             <span class="faq-icon">+</span>
                         </div>
                         <div class="faq-answer">
                             <div class="faq-answer-content">
                                 Aceptamos tarjetas de crédito (Visa, Mastercard, American Express), 
-                                tarjetas de débito, PayPal, Mercado Pago y transferencia bancaria. 
-                                El pago es 100% seguro.
+                                tarjetas de débito, PayPal, Mercado Pago, y transferencia bancaria. 
+                                Todos los pagos son 100% seguros y procesados a través de plataformas certificadas.
                             </div>
                         </div>
                     </div>
 
                     <div class="faq-item">
                         <div class="faq-question">
-                            <span>¿Es seguro realizar la compra?</span>
+                            <span>¿Puedo acceder desde cualquier dispositivo?</span>
                             <span class="faq-icon">+</span>
                         </div>
                         <div class="faq-answer">
                             <div class="faq-answer-content">
-                                Totalmente segura. Todos los pagos son procesados por plataformas 
-                                certificadas con encriptación SSL de nivel bancario. Tus datos nunca 
-                                son almacenados en nuestros servidores. Además, cuentas con garantía 
-                                de 7 días.
+                                Claro que sí. El curso está completamente optimizado para desktop, tablet y móvil. 
+                                Puedes ver las lecciones desde donde quieras, cuando quieras. Solo necesitas internet.
                             </div>
                         </div>
                     </div>
 
                     <div class="faq-item">
                         <div class="faq-question">
-                            <span>¿Cuánto tiempo tendré acceso al contenido?</span>
+                            <span>¿Por cuánto tiempo tengo acceso al curso?</span>
                             <span class="faq-icon">+</span>
                         </div>
                         <div class="faq-answer">
                             <div class="faq-answer-content">
-                                Acceso de por vida. Pagas una vez y el contenido es tuyo para siempre. 
-                                Esto incluye todos los módulos actuales, actualizaciones futuras sin 
-                                costo adicional, y nuevos materiales que agreguemos.
+                                Acceso de por vida. Un único pago y tienes acceso ilimitado a todo el contenido 
+                                actual y a todas las actualizaciones futuras que agreguemos sin costo adicional.
                             </div>
                         </div>
                     </div>
 
                     <div class="faq-item">
                         <div class="faq-question">
-                            <span>¿Funciona si tengo TDAH o dificultad para concentrarme?</span>
+                            <span>¿Tengo soporte si tengo dudas?</span>
                             <span class="faq-icon">+</span>
                         </div>
                         <div class="faq-answer">
                             <div class="faq-answer-content">
-                                Sí, de hecho está diseñado pensando en eso. Trabajamos con la química 
-                                cerebral, no te pedimos "concéntrate más". Te enseñamos a gestionar 
-                                la dopamina y el enfoque. Respetamos tu tipo de cerebro.
+                                Sí, accedes a nuestra comunidad VIP exclusiva donde puedes hacer preguntas, 
+                                recibir retroalimentación y conectar con otros estudiantes. También tienes 
+                                soporte por correo para dudas específicas.
                             </div>
                         </div>
                     </div>
 
                     <div class="faq-item">
                         <div class="faq-question">
-                            <span>¿Cuánto tiempo me tomará ver resultados?</span>
+                            <span>¿Necesito tener conocimientos previos de IA?</span>
                             <span class="faq-icon">+</span>
                         </div>
                         <div class="faq-answer">
                             <div class="faq-answer-content">
-                                Primeros cambios: 2 semanas aprox. Cambios sostenibles: 4 semanas. 
-                                Transformación completa: 6-8 semanas. Tu cerebro empieza a crear 
-                                nuevos circuitos neurales desde la primera semana.
+                                No necesitas ningún conocimiento previo. Este curso está diseñado desde cero 
+                                para principiantes absolutos. Partimos desde lo más básico y avanzamos paso a paso.
                             </div>
                         </div>
                     </div>
@@ -1364,10 +1281,10 @@
         <!-- Final CTA -->
         <section class="final-cta" id="precio">
             <div class="container-narrow">
-                <h2>¿Estás listo/a para <span class="text-gradient">transformar tu vida</span>?</h2>
+                <h2>Invierte en tu <span class="text-gradient">futuro hoy</span></h2>
                 <p>
-                    No dejes pasar esta oportunidad. Invierte en ti mismo/a y 
-                    comienza tu transformación hoy.
+                    La IA es el futuro. ¿Vas a quedarte atrás o serás de los primeros en dominarla? 
+                    La decisión es tuya.
                 </p>
                 
                 <div class="price-box">
@@ -1380,7 +1297,7 @@
                 </div>
 
                 <a href="#" class="btn btn-primary btn-lg">
-                    ¡SÍ! Quiero Acceso Inmediato
+                    ¡SÍ! Quiero Acceso Ahora
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                     </svg>
@@ -1394,7 +1311,7 @@
                         <div class="student-avatar">👨‍🦳</div>
                         <div class="student-avatar">+</div>
                     </div>
-                    <span style="color: var(--gray);">+1,000 personas ya están transformando su productividad</span>
+                    <span style="color: var(--gray);">Únete a +500 personas que ya están transformando sus vidas</span>
                 </div>
             </div>
         </section>
@@ -1439,27 +1356,26 @@
                 const item = question.parentElement;
                 const isActive = item.classList.contains('active');
                 
-                // Close all items
                 document.querySelectorAll('.faq-item').forEach(i => {
                     i.classList.remove('active');
                 });
                 
-                // Open clicked item if it wasn't active
                 if (!isActive) {
                     item.classList.add('active');
                 }
             });
         });
 
-        // Video placeholder click
-        document.getElementById('videoPlaceholder').addEventListener('click', function() {
-            // Aquí puedes agregar el código para mostrar un video de YouTube o Vimeo
-            // Por ejemplo:
-            // this.innerHTML = '<iframe width="100%" height="100%" src="https://www.youtube.com/embed/VIDEO_ID?autoplay=1" frameborder="0" allowfullscreen></iframe>';
-            alert('Aquí se reproduciría el video. Reemplaza este código con tu embed de YouTube o Vimeo.');
+        // Video placeholders
+        document.getElementById('videoPlaceholder1').addEventListener('click', function() {
+            alert('Aquí iría tu primer video. Reemplaza con: \n\nthis.innerHTML = \'<iframe width="100%" height="100%" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>\';');
         });
 
-        // Smooth scroll for anchor links
+        document.getElementById('videoPlaceholder2').addEventListener('click', function() {
+            alert('Aquí iría tu segundo video. Reemplaza con: \n\nthis.innerHTML = \'<iframe width="100%" height="100%" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>\';');
+        });
+
+        // Smooth scroll
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
                 e.preventDefault();
@@ -1473,7 +1389,7 @@
             });
         });
 
-        // Add scroll animations
+        // Scroll animations
         const observerOptions = {
             threshold: 0.1,
             rootMargin: '0px 0px -50px 0px'
@@ -1488,7 +1404,7 @@
             });
         }, observerOptions);
 
-        document.querySelectorAll('.pain-card, .bonus-card, .faq-item').forEach(el => {
+        document.querySelectorAll('.benefit-card, .bonus-card, .faq-item').forEach(el => {
             el.style.opacity = '0';
             el.style.transform = 'translateY(30px)';
             el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
